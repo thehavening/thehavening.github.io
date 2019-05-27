@@ -22,7 +22,7 @@ body{
     background-color: #d4c3c1; }
   .timeline h2 {
     margin: 0 auto;
-    width: 50%;
+    width: 60%;
     color: #faf6ef;
     padding:10px;
     background: #750d03;
@@ -112,9 +112,14 @@ body{
 
       .timeline .timeline-items .timeline-item.centered {
         position: relative;
-        text-align: justify;
-        width: 75%;
-        margin:auto; }
+        text-align: center;
+        background-color:#750d03;
+        width: 60%;
+        color:#eac9c6;
+        margin-right:auto;
+        margin-left:auto; }
+        .timeline .timeline-items .timeline-item.centered h3 {
+          color:#faf6ef; }
         .timeline .timeline-items .timeline-item.centered::before {
           content: '';
           width: 0;
