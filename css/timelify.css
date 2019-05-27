@@ -72,19 +72,19 @@ body{
         border-radius: 100%;
         left: calc(100% + 10.4%); }
       
-      .timeline .timeline-items .timeline-item.inverted {
+      .timeline .timeline-items .timeline-item.right {
         position: relative;
         padding:15px 30px 15px 30px;
         left: 54%;
         text-align: right; }
-        .timeline .timeline-items .timeline-item.inverted::before {
+        .timeline .timeline-items .timeline-item.right::before {
           content: '';
           width: 0;
           height: 0;
           position: absolute;
           left: -1em;
           top: 0; }
-        .timeline .timeline-items .timeline-item.inverted::after {
+        .timeline .timeline-items .timeline-item.right::after {
           content: '';
           background: #750d03;
           width: 30px;
@@ -95,7 +95,7 @@ body{
           left: calc(-8.78% - 13px); }
 
           .timeline .timeline-items .timeline-item.failed {
-            background:rgba(216, 210, 209, 0.7);
+            background:rgba(220, 220, 220, 0.7);
           }
           .timeline-item.failed h3{
             color:#863c34;
@@ -113,7 +113,8 @@ body{
       .timeline .timeline-items .timeline-item.centered {
         position: relative;
         text-align: justify;
-        width: 100%; }
+        width: 75%;
+        margin:auto; }
         .timeline .timeline-items .timeline-item.centered::before {
           content: '';
           width: 0;
