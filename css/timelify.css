@@ -19,11 +19,12 @@ body{
     margin: 0 auto;
     height: 100%;
     width: 4px;
-    background-color: #750d03; }
+    background-color: #d4c3c1; }
   .timeline h2 {
     margin: 0 auto;
     width: 50%;
     color: #faf6ef;
+    padding:10px;
     background: #750d03;
     text-align: center;
     font-size: 30px;
@@ -41,7 +42,7 @@ body{
       position: relative;
       margin-bottom: 100px;
       left: -10px;
-      padding: 15px 15px 15px 25px;
+      padding: 15px 30px 15px 30px;
       background: rgba(231, 213, 180, 0.9);
       width: 45%; }
       .timeline .timeline-items .timeline-item h3 {
@@ -73,6 +74,7 @@ body{
       
       .timeline .timeline-items .timeline-item.inverted {
         position: relative;
+        padding:15px 30px 15px 30px;
         left: 54%;
         text-align: right; }
         .timeline .timeline-items .timeline-item.inverted::before {
@@ -93,11 +95,20 @@ body{
           left: calc(-8.78% - 13px); }
 
           .timeline .timeline-items .timeline-item.failed {
-            background:rgba(222,215,202,0.7);
+            background:rgba(216, 210, 209, 0.7);
           }
           .timeline-item.failed h3{
             color:#863c34;
           }
+          .timeline .timeline-items .timeline-item.failed::after {
+          content: '';
+          background: #d4c3c1;
+          width: 30px;
+          height: 30px;
+          position: absolute;
+          top: -15px;
+          border-radius: 100%;
+          left: calc(-8.78% - 13px); }
 
       .timeline .timeline-items .timeline-item.centered {
         position: relative;
