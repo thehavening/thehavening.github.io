@@ -28,11 +28,11 @@
 			</li>
 			-->
 
-			<li class="timeline-item centered">
+			<li class="timeline-item city">
 				<h3>Gloomhaven</h3>
 				<info date="06/02/2019"></info>
 				<p>
-					<b>CITY</b>: We saw hostile crab creatures on the dock. Rather than fighting, we went over to reason with them and they left us when they saw we were not a threat. The villagers saw this and we increased our reputation.
+					<b>CITY</b>: ??
 				</p>
 			</li>
 
@@ -40,13 +40,18 @@
 				<h3>#27 - Ruinous Rift</h3>
 				<info date="06/02/2019" level="3" attempts="3" treasure=""></info>
 				<p>
-					<b>ROAD</b>: we saw some birds and shot them down. We started the scenario blessed after eating heartily!
-				</p>
-				<hr>
-				<p>
 					The rift has been closed! We survived ten minutes (rounds) in the the rift, protecting Hail
 					from every demon imaginable. It took us a few attempts, but we finally made it! Hail repaid us by giving us 100g worth of enhancements back in Gloomhaven.
 				</p>
+				<hr>
+				<p>
+					<b><attempt></attempt> 1 - ROAD</b>: We saw some birds and shot them down. We started the scenario blessed after eating heartily!
+					<br>
+					<b><attempt></attempt> 2 - CITY</b>: We decide to head back to the city before trying again. Hostile crab creatures were taking over the dock, click clacking their claws. Rather than fighting, we went over to reason with them and they left us when they saw we were not a threat. The villagers saw this and we increased our reputation. Lavelatla leveled up to 6.
+					<br>
+					<b><attempt></attempt> 3 - ROAD</b>: Wolves are howling in the distance. We hold our ground and wait for them to come to us. Unfortunately, they were a bigger danger than we expected. We start the 3rd attempt with -3 health.
+				</p>
+				
 			</li>
 
 			<li class="timeline-item">
@@ -257,9 +262,14 @@
 	function star(element){
 		element.innerHTML = "<i class='fas fa-star' style='color:#cc9845;'></i>&nbsp;&nbsp;&nbsp;&nbsp;";
 	}   
+
+	function attempt(element){
+		element.innerHTML = "<i class='fas fa-history'></i>&nbsp;";
+	}   
 	 
 	customTag("info",info);
 	customTag("star",star);
+	customTag("attempt",attempt);
 </script>
 
 </body>
