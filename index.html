@@ -28,18 +28,30 @@
 			</li>
 			-->
 
+			<li class="timeline-item centered">
+				<h3>Gloomhaven</h3>
+				<info date="06/02/2019"></info>
+				<p>
+					<b>CITY</b>: We saw hostile crab creatures on the dock. Rather than fighting, we went over to reason with them and they left us when they saw we were not a threat. The villagers saw this and we increased our reputation.
+				</p>
+			</li>
+
 			<li class="timeline-item">
 				<h3>#27 - Ruinous Rift</h3>
 				<info date="06/02/2019" level="3" attempts="3" treasure=""></info>
 				<p>
+					<b>ROAD</b>: we saw some birds and shot them down. We started the scenario blessed after eating heartily!
+				</p>
+				<hr>
+				<p>
 					The rift has been closed! We survived ten minutes (rounds) in the the rift, protecting Hail
-					from every demon imaginable. It took us a few attempts, but we finally made it!
+					from every demon imaginable. It took us a few attempts, but we finally made it! Hail repaid us by giving us 100g worth of enhancements back in Gloomhaven.
 				</p>
 			</li>
-			
+
 			<li class="timeline-item">
 				<h3>#05 - Ruinous Crypts</h3>
-				<info date="05/30/2019" level="4" attempts="" treasure="15 Gold and MISSING"></info>
+				<info date="05/30/2019" level="4" attempts="" treasure="15 Gold,MISSING"></info>
 				<p>
 					We walked up in that piece and saw necro shiz. We stopped that toot sweet.
 				</p>
@@ -226,11 +238,17 @@
         }
 
         if(element.attributes.treasure && element.attributes.treasure.value !== ''){
-        	if(element.attributes.treasure.value === 'MISSING'){
-        		html += spaces + "<span style='color:#a0544b;'><i class='fas fa-gem'></i> <b>" + element.attributes.treasure.value + "</b></span>";
+        	var treasures = element.attributes.treasure.value.split(',');
+
+        	treasures.forEach(function(t){
+        		if(t === 'MISSING'){
+        		html += spaces + "<span style='color:#a0544b;'><i class='fas fa-gem'></i> <b>" + t + "</b></span>";
         	} else {
-        		html += spaces + "<i class='fas fa-gem'></i> " + element.attributes.treasure.value;
+        		html += spaces + "<i class='fas fa-gem'></i> " + t;
         	}
+        	});
+
+        	
         }
 
         element.innerHTML = html + "</div>";
